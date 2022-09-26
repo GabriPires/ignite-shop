@@ -11,7 +11,7 @@ const Home: NextPage = () => {
 };
 
 const Button = styled('button', {
-  backgroundColor: '$rocketseat',
+  backgroundColor: '$green300',
   borderRadius: 4,
   border: 'none',
   padding: '4px 8px',
