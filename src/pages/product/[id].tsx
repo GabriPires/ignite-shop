@@ -1,11 +1,28 @@
-import { useRouter } from 'next/router';
+import {
+  ImageContainer,
+  ProductContainer,
+  ProductDetails,
+} from '../../styles/pages/product';
 
 const Product = () => {
-  const {
-    query: { id },
-  } = useRouter();
+  return (
+    <ProductContainer>
+      <ImageContainer></ImageContainer>
 
-  return <h1>Product {id}</h1>;
+      <ProductDetails>
+        <h1>Camiseta X</h1>
+        <span>R$ 100,00</span>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+          ducimus neque quo! Eum, eaque tempore vero quasi aspernatur ducimus
+          neque quisquam, repellendus soluta beatae cupiditate. Magni nulla
+          expedita odio maxime!
+        </p>
+
+        <button>Comprar agora</button>
+      </ProductDetails>
+    </ProductContainer>
+  );
 };
 
 export default Product;
