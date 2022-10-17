@@ -61,8 +61,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
     };
   });
 
-  console.log(response.data);
-
   return {
     props: {
       products,
